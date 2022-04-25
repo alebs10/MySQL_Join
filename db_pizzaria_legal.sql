@@ -42,7 +42,12 @@ INSERT INTO tb_pizza (descricao, preco, numFatias, borda, categoria_id) VALUES (
 INSERT INTO tb_pizza (descricao, preco, numFatias, borda, categoria_id) VALUES ("Pizza de Mussarela", 79.99, 8, "Recheada com Pepperoni", 1);
 
 SELECT * FROM tb_pizza
-WHERE preco >= 45.00;
+WHERE preco >= 45.00
+ORDER BY preco;
+
+SELECT * FROM tb_pizza
+WHERE preco BETWEEN 500 AND 1000
+ORDER BY preco;
 
 SELECT * FROM tb_pizza
 WHERE descricao LIKE "%M%";
